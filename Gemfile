@@ -40,6 +40,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+  gem 'guard'
+  gem 'guard-rspec', require: false
 end
 
 group :development do

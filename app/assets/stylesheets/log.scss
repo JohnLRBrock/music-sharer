@@ -1,3 +1,15 @@
 // Place all the styles related to the log controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.center {
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.center-text{
+    text-align: center;
+}
+.center-form{
+    display: inline-block;
+    text-align: center;
+}
