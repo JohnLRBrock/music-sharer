@@ -6,9 +6,10 @@ class LogsController < ApplicationController
   end
   
   def current
-    unless Log.last.nil?
-      @video = Log.last.video
-      @message = Log.last.message
+    recent = Log.last
+    unless recent.nil?
+      @video = recent.video
+      @message = recent.message
     end
   end
 
