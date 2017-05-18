@@ -4,6 +4,9 @@
   </h6>
   <hr><br><br>
   <%= render 'video', video: @video %>
-  <p class="center-text"><%= @message %></p>
+  
+  <% @message.split("\n").each do |paragraph| %>
+    <p><%= paragraph %></p>
+  <% end %>
   <%= render 'log', log: @log %>
 </div>
