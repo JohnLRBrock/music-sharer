@@ -1,5 +1,9 @@
-<% @logs.each do |log| %>
-  <hr>
-  <%= render 'video', video: log.video %>
-  <%= render 'message', message: log.message %>
+<% unless @logs.nil? %>
+  <% @logs.each do |log| %>
+    <hr>
+    <%= render 'video', video: log.video %>
+    <%= render 'message', message: log.message %>
+  <% end %>
+<% else %>
+  <p>There aren't any logs yet</p>
 <% end %>

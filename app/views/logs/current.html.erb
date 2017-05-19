@@ -3,7 +3,7 @@
     Share a song that has personal meaning to you and tell us why.
   </h6>
   <hr><br><br>
-  <%= render 'video', video: @video %><br><br>
-  <%= render 'message', message: @message %>
+  <%= render('video', video: @video) unless @video.nil? %><br><br>
+  <%= render('message', message: @message) unless @message.nil? %>
   <%= render 'log', log: @log %>
 </div>
