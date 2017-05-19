@@ -1,4 +1,4 @@
-<% unless @logs.nil? %>
+<% unless @logs.empty? %>
   <% @logs.each do |log| %>
     <hr>
     <%= render 'video', video: log.video %>
