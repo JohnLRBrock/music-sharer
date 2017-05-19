@@ -1,0 +1,5 @@
+<% @logs.each do |log| %>
+  <hr>
+  <%= render 'video', video: log.video %>
+  <%= render 'message', message: log.message %>
+<% end %>

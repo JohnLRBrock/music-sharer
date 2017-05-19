@@ -3,6 +3,8 @@ class Log < ApplicationRecord
     self.video = video_id(self.video)
   end
 
+  scope :newest_first, -> { order(created_at: :desc) }
+
   # convert the video url given by the user to just the video id
   # returns false if it fails
   def video_id(video_url)

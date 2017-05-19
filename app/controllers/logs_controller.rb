@@ -1,8 +1,7 @@
 class LogsController < ApplicationController
 
-    
   def index
-    @logs = Log.all
+    @logs = Log.all.newest_first
   end
   
   def current
