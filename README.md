@@ -3,4 +3,4 @@ John Brock
 
 This is a project I've been wanting to make for a while. It's a simple social project where strangers can select music videos on youtube and share why that song is important to them.
 
-It still needs to be styled and I need to add a page so people can see the posts from the past and not just the current one.
+Next feature I want to add is a comments section.
