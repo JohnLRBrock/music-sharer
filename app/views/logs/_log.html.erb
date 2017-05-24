@@ -3,7 +3,7 @@
   <%= text_field_tag :video %>
   <br>
   <%= label_tag(:message, 'Message:') %>
-  <%= text_area_tag(:message) %>
+  <%= text_area_tag(:message, nil, size: "25x6") %>
   <br>
   <%= submit_tag "Share" %>
 <% end %>
