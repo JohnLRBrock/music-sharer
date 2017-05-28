@@ -5,5 +5,6 @@
   <hr><br><br>
   <%= render('video', video: @video) unless @video.nil? %><br><br>
   <%= render('message', message: @message) unless @message.nil? %>
+  <%= link_to 'Discuss', @recent, class: 'discuss-button' %><br><br><hr>
   <%= render 'log', log: @log %>
 </div>

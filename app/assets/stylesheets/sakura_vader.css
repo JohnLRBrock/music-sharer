@@ -143,7 +143,7 @@ textarea {
     color: #120c0e;
     outline: 0; }
 
-textarea, select, input[type] {
+textarea, select, input[type], .discuss-button {
   color: #d9d8dc;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */

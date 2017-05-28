@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'logs/current'
 
-  resources :logs, only: [:create, :index]
+  resources :logs, only: [:create, :index, :show]
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

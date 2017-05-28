@@ -5,10 +5,18 @@ class LogsController < ApplicationController
   end
   
   def current
-    recent = Log.last
-    unless recent.nil?
-      @video = recent.video
-      @message = recent.message
+    @recent = Log.last
+    unless @recent.nil?
+      @video = @recent.video
+      @message = @recent.message
+    end
+  end
+
+  def show
+    @log = Log.find(params[:id])
+    unless @log.nil?
+      @video = @log.video
+      @message = @log.message
     end
   end
 
