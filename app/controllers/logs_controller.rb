@@ -20,6 +20,9 @@ class LogsController < ApplicationController
     end
   end
 
+  def new
+  end
+
   def create
     log = Log.new(log_params)
     if log.save
