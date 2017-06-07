@@ -173,6 +173,13 @@ header {
     height: 100%;
     border: none; }
 
+.buffer {
+  display: block;
+  height: 45px;
+  width: 100px;
+  clear: both;
+  }
+
 #share-text {
   margin-top: 10px;
   margin-bottom: 15px; }

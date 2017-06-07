@@ -3,6 +3,9 @@
     <%= render 'video', video: log.video %>
     <%= render 'message', message: log.message %>
     <%= link_to 'Discuss', log, class: 'discuss-button' %>
+    <% unless @logs.last == log %>
+      <div class="buffer"></div>
+    <% end %>
   <% end %>
 <% else %>
   <h6>No one has shared any songs yet. You can be the first!</h6>
