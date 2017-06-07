@@ -1,9 +1,8 @@
 <% unless @logs.empty? %>
   <% @logs.each do |log| %>
-    <hr>
     <%= render 'video', video: log.video %>
     <%= render 'message', message: log.message %>
-    <%= link_to 'Discuss', log, class: 'discuss-button' %><br><br>
+    <%= link_to 'Discuss', log, class: 'discuss-button' %>
   <% end %>
 <% else %>
   <h6>No one has shared any songs yet. You can be the first!</h6>

@@ -1,9 +1,6 @@
-<div class="shell"> 
-  <h6 id="share_text">
-    Share a song that has personal meaning to you and tell us why.
-  </h6>
-  <hr><br>
-  <%= render('video', video: @video) unless @video.nil? %><br>
-  <%= render('message', message: @message) unless @message.nil? %>
-  <%= link_to 'Discuss', @recent, class: 'discuss-button' %><br><br>
-</div>
+<h6 id="share-text">
+  Share a song that has personal meaning to you&nbsp;and&nbsp;tell&nbsp;us&nbsp;why.
+</h6>
+<%= render('video', video: @video) unless @video.nil? %>
+<%= render('message', message: @message) unless @message.nil? %>
+<%= link_to 'Discuss', @recent, class: 'discuss-button' %>

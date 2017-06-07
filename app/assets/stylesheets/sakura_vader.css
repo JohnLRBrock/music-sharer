@@ -1,10 +1,3 @@
-/* $color-text: #dedce5; */
-/* Sakura.css v1.0.0
- * ================
- * Minimal css theme.
- * Project: https://github.com/oxalorg/sakura
- */
-/* Body */
 html {
   font-size: 62.5%;
   font-family: serif; }
@@ -15,8 +8,7 @@ body {
   max-width: 38em;
   margin: auto;
   color: #d9d8dc;
-  background-color: #120c0e;
-  padding: 13px; }
+  background-color: #120c0e; }
 
 @media (max-width: 684px) {
   body {
@@ -143,7 +135,7 @@ textarea {
     color: #120c0e;
     outline: 0; }
 
-textarea, select, input[type], .discuss-button {
+textarea, select, input[type], .discuss-button, .nav-button {
   color: #d9d8dc;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -161,3 +153,32 @@ label, legend, fieldset {
   display: block;
   margin-bottom: .5rem;
   font-weight: 600; }
+
+.shell { min-width: 350px; }
+
+header {
+  margin-top: 25px;
+  margin-bottom: 20px; }
+  header .nav-button {
+    margin-bottom: 0; }
+
+.video-container {
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;}
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none; }
+
+#share-text {
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+footer {
+  font-size: 12px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
