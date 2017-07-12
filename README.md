@@ -4,7 +4,7 @@ The app uses a Rails back end, Postgresql database, and is hosted on Heroku. Thi
 
 The style is based off of Sakura https://github.com/oxalorg/sakura
 
-Next I want to revanmp the older music section to not load all the selections at once.
+Next I want to revamp the older music section to not load all the selections at once.
 
 https://music-sharer.herokuapp.com/
 
