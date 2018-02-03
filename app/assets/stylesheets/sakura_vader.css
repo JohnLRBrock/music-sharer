@@ -188,8 +188,12 @@ p {
   font-size: .9em;
 }
 
+.pagination {
+  margin-top: 10px;
+}
+
 footer {
   font-size: .75em;
-  margin-top: 22px;
+  margin-top: 3px;
   margin-bottom: 15px;
 }

@@ -10,4 +10,4 @@ video = 'https://www.youtube.com/watch?v=0Hegd4xNfRo'
 
 message = "I spent the first couple of decades of my life as a Christian. My belief was the driving force in my life during that time and when I finally stopped running from my doubts in college I didn't like what I found. It would be dishonest of me to hold onto faith in something because it's comforting.\n\nA couple of years later, I got tickets to see Leon Bridges in concert and I went with one of my best friends. When Leon brought the lights down low and played River, I felt more spiritual than I had in years. Since religion stopped being a major part of my life I've been neglecting my spirituality trying to establish my new identity. Leon reminded me that you can have spirituality without religion and his music will always be special to me because of that. Thanks Leon."
 
-Log.create(video: video, message: message)
+100.times { Log.create(video: video, message: message) }

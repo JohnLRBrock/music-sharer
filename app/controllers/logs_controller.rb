@@ -1,7 +1,7 @@
 class LogsController < ApplicationController
 
   def index
-    @logs = Log.all.newest_first
+    @logs = Log.page(params[:page]).newest_first
   end
   
   def current
@@ -32,9 +32,9 @@ class LogsController < ApplicationController
     end
   end
 
-  def random
-    @log = Log.order("RANDOM()").first
-  end
+  # def random
+  #   @log = Log.order("RANDOM()").first
+  # end
 
   private
     def log_params
