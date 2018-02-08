@@ -1,4 +1,4 @@
-#Motif
+# Motif
 
 This is a project I've been wanting to make for a while. It's a simple social project where strangers can select music videos on youtube and share why that song is important to them.
 
